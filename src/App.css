@@ -1,38 +1,94 @@
-.App {
+.body{
+  background-color: aliceblue;
+  
+}
+.container{
+  background: linear-gradient(109.6deg, rgb(120, 212, 234) 11.2%, rgb(216, 226, 253) 72.1%);
+  max-width: 600px;
+  max-height: 1000px;
+  border: 5px ;
+  border-radius: 10px;
+  margin:40px auto;
+  padding: 20px;
+}
+.description{
+  background-color: rgb(192, 253, 253, 0.10);
+  border: 1px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgb(0, 0, 0 , 0.08);
+  margin: 20px auto;
+  line-height: 2;
+  padding: 20px;
+}
+.left-boxes{
+  margin: 20px auto;
   text-align: center;
+
+}
+.temperature{
+  background-color: rgb(192, 253, 253, 0.10);
+  margin-bottom: 20px;
+  padding: 10px;
+  line-height: 2;
+  border: 1px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgb(0, 0, 0 , 0.08);
+}
+hr{
+  margin: 10px 20px ;
+}
+.air-condition{
+  background-color: rgb(192, 253, 253, 0.10);
+  padding: 5px;
+  border: 1px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgb(0, 0, 0 , 0.08);
+}
+.info{
+  margin-top: 20px;
+  list-style: none;
+  color: black;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.current-time{
+  color: #516787;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+h3,h6,.city{
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: 'Erica One', cursive;
+}
+.icon{
+  max-width: 80px;
+  margin: 0 auto;
+}
+.forcast{
+  background-color: rgb(192, 253, 253, 0.10);
+  border: 1px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgb(0, 0, 0 , 0.08);
+  margin: 10px 5px auto;
+  padding: 5px;
+  text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 13px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.forcast-icon{
+  max-width: 50px;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.min-temp{
+  color: #516787;
+  margin-left: 4px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  text-align: center;
+  font-size:10px;
+  margin-top: 0;
 }

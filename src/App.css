@@ -1,15 +1,22 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Lilita+One&family=Sigmar&family=Titan+One&display=swap');
+
 .body{
   background-color: aliceblue;
   
 }
+.App{
+  max-width: 540px;
+  margin:100px auto;
+}
 .container{
   background: linear-gradient(109.6deg, rgb(120, 212, 234) 11.2%, rgb(216, 226, 253) 72.1%);
-  max-width: 600px;
-  max-height: 1000px;
   border: 5px ;
   border-radius: 10px;
-  margin:40px auto;
   padding: 20px;
+}
+.search-form{
+  margin: 5px 2px;
 }
 .description{
   background-color: rgb(192, 253, 253, 0.10);
@@ -61,6 +68,9 @@ h3,h6,.city{
   margin-top: 10px;
   margin-bottom: 0;
   font-family: 'Erica One', cursive;
+font-family: 'Lilita One', cursive;
+font-family: 'Sigmar', cursive;
+font-family: 'Titan One', cursive;
 }
 .icon{
   max-width: 80px;

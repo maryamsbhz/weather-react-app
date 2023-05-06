@@ -33,7 +33,7 @@ function Search(){
   }
 
   return(
-    <div className="container">
+    <div className="container m-2">
       <div className="search-form">
         <form className="search-city d-flex" role="search" onSubmit={handleSubmit} >
           <input className="search-text-input form-control m-2 me-2" type="search" placeholder="Search" aria-label="Search" onChange={updateCity} />
@@ -58,7 +58,7 @@ function Search(){
           </div>
           <div className="air-condition">
             <h3 className="condition">{weather.description}</h3> 
-            <img src={weather.icon} alt="{weather.description}" className="icon" /><hr />
+            <img src={weather.icon} alt={weather.description} className="icon" /><hr />
           </div>
         </div>
       </div>

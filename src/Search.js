@@ -12,7 +12,7 @@ function Search(){
   function showWeather(response){
     setWeather({
       name : response.data.name,
-      temperature: response.data.main.temp,
+      temperature: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       pressure : response.data.main.pressure,
@@ -54,7 +54,7 @@ function Search(){
         <div className="left-boxes col-4 mt-2 p-1"  >
           <div className="temperature">
             <h6>temperature</h6>
-            <span ><strong className="temp">{Math.round(weather.temperature)}</strong> °C</span><hr />
+            <span ><strong className="temp">{weather.temperature}</strong>°C </span><hr />
           </div>
           <div className="air-condition">
             <h3 className="condition">{weather.description}</h3> 

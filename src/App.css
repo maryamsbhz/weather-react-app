@@ -50,6 +50,11 @@ hr{
   border: 1px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 5px rgb(0, 0, 0 , 0.08);
+  
+}
+.condition{
+  font-size: 20px;
+  margin: 20px 10px 10px 10px;
 }
 .info{
   margin-top: 20px;
@@ -57,7 +62,14 @@ hr{
   color: black;
   
 }
-
+.temp{
+  font-size: 25px;
+}
+.unit{
+  font-size: 13px;
+  position: relative;
+  top: -14px;
+}
 .current-time{
   color: #516787;
   position: relative;

@@ -3,8 +3,8 @@ import './App.css';
 import Forecast from "./Forecast.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios";
-import FormatDate from "./FormatDate.js"
-
+import FormattedDate from "./FormatDate.js";
+import WeatherIcon from "./WeatherIcon";
 
 function Search(){
   let [city,setCity]=useState("")
@@ -19,7 +19,7 @@ function Search(){
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       pressure : response.data.main.pressure,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description
     });
   }
@@ -44,7 +44,7 @@ function Search(){
       </div>
       <div className="row mt-3">
         <div className="description col-6">
-          <FormatDate  />
+          <FormattedDate  />
           <h1 className="city">{weather.name}</h1>
           <hr />
           <ul className="info">
@@ -60,7 +60,10 @@ function Search(){
           </div>
           <div className="air-condition">
             <h3 className="condition text-capitalize">{weather.description}</h3> 
-            <img src={weather.icon} alt={weather.description} className="icon" /><hr />
+              <div className="icon">
+              <WeatherIcon code={weather.icon} />
+              <hr />
+            </div>
           </div>
         </div>
       </div>

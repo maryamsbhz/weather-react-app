@@ -1,0 +1,21 @@
+.Forcast{
+  background-color: rgb(192, 253, 253, 0.10);
+  border: 1px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgb(0, 0, 0 , 0.08);
+  margin: 10px 5px auto;
+  padding: 5px;
+  text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.forcast-icon{
+  max-width: 50px;
+  
+}
+.min-temp{
+  color: #516787;
+  margin-left:7px;
+}

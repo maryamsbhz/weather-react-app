@@ -68,7 +68,7 @@ function Search(props){
             <div className="air-condition">
               <h3 className="condition text-capitalize">{weather.description}</h3> 
                 <div className="icon">
-                <WeatherIcon code={weather.icon} />
+                <WeatherIcon code={weather.icon} size={60} />
                 <hr />
               </div>
             </div>

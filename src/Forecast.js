@@ -23,7 +23,7 @@ function Forecast(props){
     console.log(props)
     return(
       <div className='row'>
-        {forecast.map(function  (dailyForecast,index){
+        {forecast.map(function(dailyForecast,index){
           if(index<5){
             return(
               <div className='col' key={index} >

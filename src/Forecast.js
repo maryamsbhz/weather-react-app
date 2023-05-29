@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Forcast.css';
 import axios from "axios";
@@ -13,13 +13,17 @@ function Forecast(props){
     
     setForecast(response.data.daily);
     setLoaded(true); 
-   }
+  }
 
+  useEffect(()=>{
+    setLoaded(false);
+  },[props.coordinates])
+  
   if(loaded){
     console.log(props)
     return(
       <div className='row'>
-        {forecast.map(function (dailyForecast,index){
+        {forecast.map(function  (dailyForecast,index){
           if(index<5){
             return(
               <div className='col' key={index} >

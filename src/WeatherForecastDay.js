@@ -2,6 +2,7 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastDay(props){
+
   function maxTemperature(){
     let maxTemp =Math.round(props.data.temp.max)
     return (`${maxTemp}°`)
@@ -12,7 +13,7 @@ export default function WeatherForecastDay(props){
   }
   function day(){
     let days =["Sun", "Mon", "Tue","wed","Thu","Fri","Sat"];
-    let date = new Date(props.date.dt * 1000);
+    let date = new Date(props.data.dt * 1000);
     let day =days[date.getDay()] ;
 
 

@@ -12,9 +12,10 @@ function Search(props){
 
 
   function showWeather(response){
+    
     setWeather({
       ready:true,
-      coord:response.data.coord,
+      coordinates:response.data.coord,
       name : response.data.name,
       temperature: Math.round(response.data.main.temp),
       date: new Date(response.data.dt * 1000),
@@ -76,7 +77,7 @@ function Search(props){
           </div>
         </div>
         <div className='Forcast m-2'> 
-          <Forecast coords={weather.coord} />
+          <Forecast coordinates={weather.coordinates} />
         </div>
       </div>
       )

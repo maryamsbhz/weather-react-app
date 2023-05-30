@@ -31,6 +31,7 @@ function Forecast(props){
               </div>
             );
           }
+          return null;
         })}
       </div>
     );
